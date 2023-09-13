@@ -12,16 +12,15 @@ function App() {
         </h1>
         <span>{count}</span>
         <div className='clickContainer'>
-          <button onClick=
-            {function () { setCount(count + 1) }}>
+          <button onClick={() => setCount((count) => count + 1)}>
             +
           </button>
           <button onClick=
-            {function () { setCount(0) }}>
+            {() => setCount(0)}>
             Reset
           </button>
           <button onClick=
-            {function () { setCount(count - 1) }}>
+            {() => setCount((count) => count - 1)}>
             -
           </button>
         </div>
